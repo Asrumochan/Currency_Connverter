@@ -133,7 +133,13 @@ function reverse_val(){
     var temp=document.getElementById('symbol').value;
     document.getElementById('symbol').value=symbol1;
     document.getElementById('symbol1').value=temp;
-
+    if(symbol.includes('USA')==true){
+        document.getElementById("logo").innerHTML='$';
+        console.log(val1*83.0922);
+    }
+    else{
+        document.getElementById("logo").innerHTML='₨';
+    }
 }
 </script>
 </html>
